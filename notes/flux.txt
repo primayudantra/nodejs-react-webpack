@@ -1,0 +1,34 @@
+----------------------------------------------------------------------------------------------------
+                                           FLUX
+----------------------------------------------------------------------------------------------------
+
+Flux is not library, not framework. Flux is general concept for making better application.
+
+- Store is state in flux.
+
+FLUX ARCHITECTURE
+=====================================================================
+[STORE]      ->   [COMPONENTS] -> [COMPONENTS and COMPONENTS like tree]
+   ^                   V
+[DISPATCHER] <-    [ACTIONS]  <-> [SERVER CALL]
+=====================================================================
+
+- Actions – Helper methods that facilitate passing data to the Dispatcher
+
+- Dispatcher  – Receives actions and broadcasts payloads to registered callbacks
+              - Dispatcher is a gatekeeper to the Stores.
+
+- Stores  – Containers for application state & logic that have callbacks registered to the dispatcher
+          - Stores manage application state for a particular domain within your application.
+
+- Controller Views – React Components that grab the state from Stores and pass it down via props to child components.
+
+
+----------------------------------------------------------------------------------------------------
+                                            REDUX
+----------------------------------------------------------------------------------------------------
+
+- Single state tree
+- State is read only
+- Reducers are pure functions
+- We can make multiple reducers
