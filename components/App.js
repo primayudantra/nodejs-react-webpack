@@ -15,8 +15,10 @@ class App extends Component {
           <Route path="/profile" component={ProfileContent}/>
           <Route path="/contact" component={ContactContent}/>
         </Router>
-        <h2>ReactJS Example</h2>
-        <h2>NodeJS | ReactJS | React-Router | Webpack</h2>
+        <div className="container">
+          <h2>ReactJS Example</h2>
+          <h2>NodeJS | ReactJS | React-Router | Webpack</h2>
+        </div>
       </div>
     )
   }
