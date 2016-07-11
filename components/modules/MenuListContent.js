@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-// import '../styles/style.scss'
+import { main } from '../styles/style.css'
 
 class MenuList extends Component {
   render(){
