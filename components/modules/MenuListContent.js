@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+// import '../styles/style.scss'
 
 class MenuList extends Component {
   render(){
     return(
       <div>
-        <ul role="nav">
+        <ul role="nav" className="main">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/profile">Profile</Link></li>
           <li><Link to="/contact">Contact</Link></li>

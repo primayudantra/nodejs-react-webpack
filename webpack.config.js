@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     devtool: 'inline-source-map', //Not for production
@@ -15,24 +16,27 @@ module.exports = {
     plugins:[
       new webpack.optimize.OccurrenceOrderPlugin(),
       new webpack.HotModuleReplacementPlugin(),
-      new webpack.NoErrorsPlugin()
+      new webpack.NoErrorsPlugin(),
+      new ExtractTextPlugin('style.css',{allChunks: true})
     ],
     module: {
       loaders: [
         {
+          // Loaders JS
           test: /\.js$/, //regex
           loader: 'babel-loader',
           exclude: /node_modules/,
           query: {
-            // Compile JSX to JS
-            // Compile ES6 to JS
-            // HMRE = Hot Module Reloading Error Handling
             presets:[
               'react',
               'es2015',
               'react-hmre'
             ]
           }
+        },
+        {
+          test: /\.css$/,
+          loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         }
       ]
     }
