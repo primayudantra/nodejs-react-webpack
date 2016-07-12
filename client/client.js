@@ -10,6 +10,7 @@ import App from '../components/App'
 import GeneralContent from '../components/modules/GeneralContent'
 import ProfileContent from '../components/modules/ProfileContent'
 import ContactContent from '../components/modules/ContactContent'
+import TodoInputContent from '../components/modules/TodoInput'
 // var App = require('../components/App')
 
 
@@ -21,6 +22,7 @@ ReactDOM.render(
       <IndexRoute component={GeneralContent}/>
       <Route path="/profile" component={ProfileContent}/>
       <Route path="/contact" component={ContactContent}/>
+      <Route path="/todo" component={TodoInputContent}/>
     </Route>
   </Router>,
 app);
