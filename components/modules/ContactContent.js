@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import MenuList from './MenuListContent'
 
 import { Button } from 'react-bootstrap'
 
