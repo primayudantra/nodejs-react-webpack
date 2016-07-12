@@ -5,7 +5,6 @@ class ProfileContent extends Component{
   render(){
     return(
       <div>
-        <MenuList/>
         <div className='container'>
           <h1>This is Profile Content</h1>
           <p>
