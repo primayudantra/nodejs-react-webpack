@@ -12,7 +12,7 @@ Install Node [here](https://nodejs.org/en/)
 $ git clone https://github.com/primayudantra/nodejs-react-webpack/
 $ cd /path/nodejs-react-webpack
 $ npm install
-$ npm run serve
+$ npm start
 ```
 Open your browser and type : [http://localhost:3000](http://localhost:3000)
 
