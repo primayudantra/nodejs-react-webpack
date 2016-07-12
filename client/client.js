@@ -12,6 +12,7 @@ import ProfileContent from '../components/modules/ProfileContent'
 import ContactContent from '../components/modules/ContactContent'
 // var App = require('../components/App')
 
+
 const app = document.getElementById('app');
 
 ReactDOM.render(
