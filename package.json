@@ -4,7 +4,7 @@
   "description": "A simple app using react | nodejs | react-router | webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon server/server.js --ignore components"
+    "start": "nodemon server/server.js --ignore components"
   },
   "repository": {
     "type": "git",
