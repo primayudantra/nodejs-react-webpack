@@ -1,16 +1,25 @@
 import React from 'react'
 // var React = require('react');
-
-import { render } from 'react-dom'
+import ReactDOM from 'react-dom'
 // var render = require('react-dom').render;
 
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+
 import App from '../components/App'
+
+import GeneralContent from '../components/modules/GeneralContent'
+import ProfileContent from '../components/modules/ProfileContent'
+import ContactContent from '../components/modules/ContactContent'
 // var App = require('../components/App')
 
-render(
-  // define the encompassing components,
-  // DOM Element we want to mount it to
+const app = document.getElementById('app');
 
-  <App/>,
-  document.getElementById('app')
-)
+ReactDOM.render(
+  <Router history={hashHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={GeneralContent}/>
+      <Route path="/profile" component={ProfileContent}/>
+      <Route path="/contact" component={ContactContent}/>
+    </Route>
+  </Router>,
+app);
