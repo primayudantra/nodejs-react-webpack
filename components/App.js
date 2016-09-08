@@ -14,6 +14,7 @@ class App extends Component {
               <li><Link to="profile">Profile</Link></li>
               <li><Link to="contact">Contact</Link></li>
               <li><Link to="todo">To-do</Link></li>
+              <li><Link to="test">Test</Link></li>
             </ul>
             </div>
           </nav>
